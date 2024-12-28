@@ -1,0 +1,77 @@
+.custom-table .ant-table-thead > tr > th {
+    background-color: #0e2a7a;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+  
+  .custom-table .ant-table-row {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .custom-table .ant-table-row:hover {
+    background-color: #b8b8b8;
+  }
+  
+  .custom-table .ant-table-pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .custom-table .ant-pagination-item-active {
+    background-color: #0e2a7a;
+    border-color: #007bff;
+  }
+  
+  .custom-table .ant-pagination-item-active {
+    color: #fff;
+  }
+  
+  .custom-table .ant-table-cell {
+    padding: 10px 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .custom-table .ant-table-row td {
+    width: auto;
+  }
+  
+  .wrapper-main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-table .ant-table-thead > tr > th,
+    .custom-table .ant-table-cell {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 456px) {
+    .wrapper-main {
+      padding: 1px;
+    }
+  }
+  
+  @media (min-width: 1300px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 100% !important;
+    }
+  }
+  

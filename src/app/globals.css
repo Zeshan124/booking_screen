@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-lexend);
+}
+
+.logo {
+  cursor: pointer;
+  max-height: 60px;
+  max-width: 100px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #2b0853;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  font-family: "Times New Roman", serif;
+  padding: 0px;
+}
+
+.logout-button {
+  padding: 12px 22px;
+  background-color: #f53b4a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.logout-button .logout-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* select stores styling */
+.select-class {
+  margin-bottom: 20px;
+  text-align: end;
+  padding: 1vh 0vh 1vh 0vh;
+}
+
+.store-select {
+  justify-content: end;
+  text-align: end;
+  padding: 0vh 1vh 0vh 1vh;
+}
+
+/* Tab styling */
+.rts___nav___btn___container .rts___btn {
+  min-height: auto;
+  min-width: auto;
+  color: rgba(58, 53, 65, 0.68);
+  background-color: transparent !important;
+  box-shadow: none;
+  padding: 0;
+}
+
+.rts___tab {
+  margin: 0;
+  position: relative;
+  padding: 0.8rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.rts___nav___btn svg {
+  max-width: unset;
+}
+.rts___nav___btn___container {
+}
+
+.rts___btn {
+  border-radius: unset;
+  border: none;
+  min-height: 72px;
+  /* min-width: 150px; */
+  /* width: 300px; */
+  font-size: 0.875rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(58, 53, 65, 0.68);
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px !important;
+  margin: 0.25rem;
+  font-weight: 500;
+  box-shadow: rgba(58, 53, 65, 0.42) 0px 4px 8px -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rts___btn:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(58, 53, 65, 0.6) 0px 6px 12px -4px;
+}
+
+.rts___tab::after {
+  content: "";
+  margin: auto;
+  height: 3px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+  width: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.rts___tab___selected {
+  color: rgb(8, 66, 160);
+  background-color: rgba(227, 242, 253, 1);
+  position: relative;
+  width: 100%;
+  padding: 0.8rem;
+  box-shadow: rgba(58, 53, 65, 0.1) 0px 2px 10px 0px;
+}
+
+.rts___nav___btn:hover {
+  background-color: unset;
+}
+.rts___nav___btn:hover > svg {
+  stroke: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 991.98px) {
+  .rts___tabs___container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 456px) {
+  .head-h1 {
+    font-size: 20px;
+  }
+  .select-class {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 1vh 0vh 1vh 0vh;
+  }
+
+  .store-select {
+    justify-content: center;
+    text-align: center;
+  }
+  .logo {
+    cursor: pointer;
+    max-height: 60px;
+    max-width: 50px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .logout-button {
+    padding: 8px 15px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 100% !important;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
